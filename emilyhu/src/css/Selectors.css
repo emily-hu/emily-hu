@@ -1,0 +1,30 @@
+.selector {
+  margin-left: calc(2px + 1vmin);
+  margin-right: calc(2px + 1vmin);
+  cursor: pointer;
+  width: calc(50px + 7vmin);
+  height: calc(50px + 7vmin);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  transition: all 0.3s cubic-bezier(0.65, 0, 0.076, 1);
+  width: 40%;
+  height: 40%;
+  background: var(--orange);
+  border-radius: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selector:hover .circle {
+  width: 100%;
+  height: 100%;
+}
+.selected .circle {
+  width: 100%;
+  height: 100%;
+}

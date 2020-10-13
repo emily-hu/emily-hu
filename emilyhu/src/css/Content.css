@@ -1,0 +1,108 @@
+.row-item {
+    margin-left: calc(2px + 1vmin);
+    margin-right: calc(2px + 1vmin);
+}
+
+.cards {
+    margin-top: 4vmin;
+    margin-bottom: 3vmin;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 70%;
+    height: calc(100px + 15vmin);
+    margin-bottom: 2vmin;
+    cursor: pointer;
+}
+
+.card-bg {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-overlay {
+    transition: all 0.2s cubic-bezier(0.65, 0, 0.076, 1);
+    min-width: fit-content;
+    min-width: fit-content;
+    max-height: 15%;
+    max-width: 33%;
+    box-sizing: border-box;
+    padding: 1% 5%;
+    background-color: var(--overlay-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover .header-overlay {
+    max-height: 100%;
+    max-width: 100%;
+    background-color: var(--overlay-white2);
+}
+
+.card.active .header-overlay {
+    flex-grow: 0.1;
+    min-width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    background-color: var(--overlay-white2);
+}
+
+.desc {
+    transition: max-height 0.9s cubic-bezier(0.65, 0, 0.076, 1),
+                max-width 0.9s cubic-bezier(0.65, 0, 0.076, 1),
+                opacity 0.2s cubic-bezier(0.65, 0, 0.076, 1);
+    opacity: 0;
+    max-height: 0;
+    max-width:0;
+    overflow: hidden;
+}
+
+.card.active .desc {
+    opacity: 1;
+    max-height: 100px;
+    max-width: 600px;
+}
+
+.card:hover .desc {
+    transition: opacity 0.2s cubic-bezier(0.65, 0, 0.076, 1);
+    opacity: 1;
+    max-height: 100px;
+    max-width: 600px;
+}
+
+.minimized{
+    display: none;
+}
+
+.expanded {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.more {
+    background-color: var(--overlay-blue);
+    flex-grow: 2;
+}
+
+.more.expanded {
+    padding: 1% 5%;
+}
+
+/* Projects */
+#xya-img {
+    background-image: url('../assets/xya.png');
+    background-size: cover;
+    background-position: center;
+}
