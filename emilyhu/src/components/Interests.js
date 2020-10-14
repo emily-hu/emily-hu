@@ -32,7 +32,7 @@ class Interests extends React.Component {
               isActive={this.state.active===1}
               desc="VR escape room. You wake up in an unfamiliar place... yeah it's one of those."
               links={<div>See a <a href="https://youtu.be/6alKuRT0NOE" target="_blank" rel="noopener noreferrer">demo</a></div>}
-              expand={<div>
+              expand={<div className="white-text">
                           I worked on this project for a semester with two teammates.
                           I learned to use Unity and VR at the same time,
                           which partially inspired my current masters project.
