@@ -26,6 +26,9 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
+    background-size: cover;
+    background-position: center;
 }
 
 .header-overlay {
@@ -94,6 +97,7 @@
 .more {
     background-color: var(--overlay-blue);
     flex-grow: 2;
+    width: 90%;
     color: var(--white);
 }
 
@@ -102,8 +106,31 @@
 }
 
 /* Projects */
+#dance2music-img {
+    background-image: url('../assets/dance2music.png');
+}
+
+#visualive-img {
+    background-image: url('../assets/visualive.png');
+}
+
 #xya-img {
     background-image: url('../assets/xya.png');
-    background-size: cover;
-    background-position: center;
+}
+
+#squarew-img {
+    background-image: url('../assets/squarew.png');
+}
+
+/* Interests */
+#synco-img {
+    background-image: url('../assets/synco.jpg');
+}
+
+#rambax-img {
+    background-image: url('../assets/rambax.png');
+}
+
+#draw-img {
+    background-image: url('../assets/draw.jpg');
 }

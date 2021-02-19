@@ -4,9 +4,9 @@
   --blue: #71B5FF;
   --black: #000A14;
   --white: rgba(255, 255, 255);
-  --overlay-white: rgba(255, 255, 255, 0.4);
-  --overlay-white2: rgba(255, 255, 255, 0.65);
-  --overlay-blue: rgba(113, 181, 255, 0.65);
+  --overlay-white: rgba(255, 255, 255, 0.7);
+  --overlay-white2: rgba(255, 255, 255, 0.85);
+  --overlay-blue: rgba(93, 161, 235, 0.85);
 }
 
 body {

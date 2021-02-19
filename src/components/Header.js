@@ -4,13 +4,10 @@ function Header() {
   return (
     <div className="content">
         <div className="header">
-            Hi, I'm Emily!
+          Hi, I'm Emily!
         </div>
         <div>
-            I'm a masters student at MIT, studying computer science.
-        </div>
-        <div>
-            Blah blah i say a lot more here, not really sure what else to include tho.
+          I'm an MIT graduate with an enthusiasm for software, music, and learning new things.
         </div>
     </div>
   );
